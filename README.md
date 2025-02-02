@@ -4,7 +4,7 @@
 
 * The purpose of this analysis is to build a supervised machine learning model that can identify the creditworthiness of borrowers by predicting if a loan is healthy (class 0) or high-risk (class 1). The analysis was conducted using data from a lending data CSV file. The CSV file contains 77,536 lines of financial data which specifically focused on loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, and total debt. 
 
-##The stages of the machine learning process.##
+### The stages of the machine learning process
 
 - Importing of libraries and dependencies 
 - Splittingi the Data into Training and Testing Sets 
@@ -33,7 +33,7 @@
 
 - **F1-Score**: 0.91 – The balance between precision and recall for high-risk loans is 0.91, which is a good value, although it's slightly lower than the perfect score for healthy loans
 
-#### Assessment of the Metrics:
+### Assessment of the Metrics:
 
 - **Accuracy**: 0.99 – The model is highly accurate, correctly classifying 99% of all instances
 
@@ -49,7 +49,7 @@
   - Recall: 0.99
   - F1-Score: 0.99
 
-##### Summary:
+### Summary:
 
 - The model seems to perform very well on healthy loans (perfect precision, recall, and F1-score in class 0), but it performs a bit less well on high-risk loans. Precision for predicting class 1 is 87.3%, while recall for class 1 is 94.8%, indicating that the model is good at detecting positives, though there's room to improve in terms of how many of the predicted positives are truly positive (since precision is lower than recall). This suggests the model might be a little more conservative when predicting high-risk loans and may miss some, though it still has a high recall (95%) for those loans.
 
