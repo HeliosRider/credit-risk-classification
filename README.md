@@ -4,10 +4,6 @@
 
 * The purpose of this analysis is to build a supervised machine learning model that can identify the creditworthiness of borrowers by predicting if a loan is healthy (class 0) or high-risk (class 1). The analysis was conducted using data from a lending data CSV file. The CSV file contains 77,536 lines of financial data which specifically focused on loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, and total debt. 
 
-The analysis tool used is Logistic Regression (LR).  LR provides statistical method for predicting binary outcomes from the provided data.
-
-
-
 * The stages of the machine learning process.
 
 - Importing of libraries and dependencies 
