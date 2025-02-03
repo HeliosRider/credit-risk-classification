@@ -17,43 +17,51 @@ The purpose of this analysis is to build a supervised machine learning model tha
 
 ### Results
 
-***healthy loan (0) evaluation:**
+***healthy loan (class 0) evaluation:**
 
-- **Precision**: 1.00 – The model is perfect in predicting healthy loans (no false positives)
+- **Precision** (1.00)
+    The model is perfect in predicting healthy loans (no false positives)
 
-- **Recall**: 1.00 – The model also correctly identifies all healthy loans (no false negatives)
+- **Recall**: (1.00)
+    The model correctly identifies all healthy loans (no false negatives)
 
-- **F1-Score**: 1.00 – Since both precision and recall are perfect, the F1-score is also 1.00
+- **F1-Score**: (1.00)
+    Since both precision and recall are perfect, the F1-score is also 1.00
 
-***high-risk loan (1) evaluation:** 
+***high-risk loan (class 1) evaluation:** 
 
-- **Precision**: 0.87 – When the model predicts a loan as high-risk, it's correct about 87% of the time
+- **Precision** (0.87)
+    The model is correct 87% of the time when prediciting loan's as high-risk
 
-- **Recall**: 0.95 – The model correctly identifies 95% of the actual high-risk loans
+- **Recall** (0.95)
+    The model correctly identifies 95% of the actual high-risk loans. Leaving a small percentage of high-risk loans it didn’t identify (5%).
 
-- **F1-Score**: 0.91 – The balance between precision and recall for high-risk loans is 0.91, which is a good value, although it's slightly lower than the perfect score for healthy loans
+- **F1-Score** (0.91)
+    The balance between precision and recall slightly lower than the perfect score for healthy loans at 91%, which is a good value
 
-### Assessment of the Metrics:
+### Assessment of the Metrics
 
-- **Accuracy**: 0.99 – The model is highly accurate, correctly classifying 99% of all instances
+- **Accuracy** (0.99)
+    The model is highly accurate, correctly classifying 99% of all instances
 
-- **Macro Average**: This is the average of precision, recall, and F1-score across all classes, without taking class imbalance into account
+- **Macro Average**: 
+    The macro average is the average of the precision, recall, and F1-score across both classes, giving equal weight to both. The macro average is solid, with values close to 1
 
-  - Precision: 0.94
-  - Recall: 0.97
-  - F1-Score: 0.95
+    - Precision: 0.94
+    - Recall: 0.97
+    - F1-Score: 0.95
 
-- **Weighted Average**: This accounts for the class imbalance by weighting the scores by the number of instances in each class which in this case the model is more influenced by the healthy loans-the larger class
+- **Weighted Average**: 
+    The Weighted Average takes into account the proportion of each class in the dataset. Since healthy loans are much more common, the weighted averages are very close to 1, which is expected
 
-  - Precision: 0.99
-  - Recall: 0.99
-  - F1-Score: 0.99
+    - Precision: 0.99
+    - Recall: 0.99
+    - F1-Score: 0.99
 
-### Summary:
+### Summary
 
-- The model seems to perform very well on healthy loans (perfect precision, recall, and F1-score in class 0), but it performs a bit less well on high-risk loans. Precision for predicting class 1 is 87.3%, while recall for class 1 is 94.8%, indicating that the model is good at detecting positives, though there's room to improve in terms of how many of the predicted positives are truly positive (since precision is lower than recall). This suggests the model might be a little more conservative when predicting high-risk loans and may miss some, though it still has a high recall (95%) for those loans
+- The model seems to perform perfectly with the healthy loan class, but slightly less with the high-risk loan class, as indicated by the lower precision and recall. However, the overall performance remains quite strong
 
-- Given that the class imbalance is likely (healthy loans significantly outnumber high-risk loans), the model might be biased towards predicting the larger class (healthy loans). This would explain the high accuracy but also why there is a noticeable gap in precision between the two classes
+- Depending on the use case, the company may want to focus on improving recall for the high-risk loan class, especially if false negatives (missing high-risk loans) could lead to significant financial problems
 
-- Overall results indicate that the model has performed well, evident by the high accuracy score of 99%
-- Based on the high accurracy score of the model, I deem the model a success and recommend it for use by the company
+- Overall results indicate that the model has performed well, evident by the high accuracy score of 99%. Based on the high accurracy score of the model, I deem the model a success and recommend it for use by the company
