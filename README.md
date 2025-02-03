@@ -51,8 +51,10 @@ The purpose of this analysis is to build a supervised machine learning model tha
 
 ### Summary:
 
-- The model seems to perform very well on healthy loans (perfect precision, recall, and F1-score in class 0), but it performs a bit less well on high-risk loans. Precision for predicting class 1 is 87.3%, while recall for class 1 is 94.8%, indicating that the model is good at detecting positives, though there's room to improve in terms of how many of the predicted positives are truly positive (since precision is lower than recall). This suggests the model might be a little more conservative when predicting high-risk loans and may miss some, though it still has a high recall (95%) for those loans.
+- The model seems to perform very well on healthy loans (perfect precision, recall, and F1-score in class 0), but it performs a bit less well on high-risk loans. Precision for predicting class 1 is 87.3%, while recall for class 1 is 94.8%, indicating that the model is good at detecting positives, though there's room to improve in terms of how many of the predicted positives are truly positive (since precision is lower than recall). This suggests the model might be a little more conservative when predicting high-risk loans and may miss some, though it still has a high recall (95%) for those loans
 
-- Given that the class imbalance is likely (healthy loans significantly outnumber high-risk loans), the model might be biased towards predicting the larger class (healthy loans). This would explain the high accuracy but also why there is a noticeable gap in precision between the two classes.
+- Given that the class imbalance is likely (healthy loans significantly outnumber high-risk loans), the model might be biased towards predicting the larger class (healthy loans). This would explain the high accuracy but also why there is a noticeable gap in precision between the two classes
 
-- Overall results indicate that the model has performed well, evident by the high accuracy score of 99%. And based on this accurracy, I recommend the model for use by the company.
+- Overall results indicate that the model has performed well, evident by the high accuracy score of 99%
+- Based on the high accurracy score of the model the model is valid
+- I recommend this model for use by the company
