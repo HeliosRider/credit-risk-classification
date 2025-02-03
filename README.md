@@ -7,7 +7,7 @@ The purpose of this analysis is to build a supervised machine learning model tha
 ### The stages of the machine learning process
 
 - Importing of libraries and dependencies 
-- Splittingi the Data into Training and Testing Sets 
+- Splitting the Data into Training and Testing Sets 
     1. Splitting data into labels and features assigning the loan status (healthy or high-risk) as labels and the remaining seven columns as features
     2. The data was then split into training and testing datasets
 - The analysis tool used is Logistic Regression (LR).  LR, as a binary classifier, provides statistical method for predicting binary outcomes from the two loan classes, healthy (class 0) or high-risk (class 1)
