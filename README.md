@@ -56,5 +56,4 @@ The purpose of this analysis is to build a supervised machine learning model tha
 - Given that the class imbalance is likely (healthy loans significantly outnumber high-risk loans), the model might be biased towards predicting the larger class (healthy loans). This would explain the high accuracy but also why there is a noticeable gap in precision between the two classes
 
 - Overall results indicate that the model has performed well, evident by the high accuracy score of 99%
-- Based on the high accurracy score of the model the model is valid
-- I recommend this model for use by the company
+- Based on the high accurracy score of the model, I deem the model a success and recommend it for use by the company
