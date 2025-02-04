@@ -60,8 +60,8 @@ The purpose of this analysis is to build a supervised machine learning model tha
 
 ### Summary
 
-- The model seems to perform perfectly with the healthy loan class, but slightly less with the high-risk loan class, as indicated by the lower precision and recall. However, the overall performance remains quite strong
+- The model seems to perform perfectly with the healthy loan class, but slightly less with the high-risk loan class, as indicated by the lower precision and recall. However, the overall performance remains quite strong.
 
-- Depending on the use case, the company may want to focus on improving recall for the high-risk loan class, especially if false negatives (missing high-risk loans) could lead to significant financial problems
+- Depending on the use case, the company may want to focus on improving recall for the high-risk loan class, especially if false negatives (missing high-risk loans) could lead to significant financial problems.
 
-- Overall results indicate that the model has performed well, evident by the high accuracy score of 99%. Based on the high accurracy score of the model, I deem the model a success and recommend it for use by the company
+- Overall results indicate that the model has performed well, evident by the high accuracy score of 99%. Based on the high accurracy score of the model, I deem the model a success and recommend it for use by the company.
